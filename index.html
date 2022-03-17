@@ -25,10 +25,29 @@
             </div>
             <nav class="menu">
                 <div class="cajasheader">
-                <a class="work" href="">contact</a>
-                <a class="about" href="">about</a>
-                <a class="contact" href="">work</a>
+                <a class="contact" href="#contact-ancla">contact</a>
+                <a class="about" href="about.html">about</a>
+                <a class="work" href="#selected-work">work</a>
                 </div>
+
+                <div class="burger">
+                
+                    <!-- Everything below this is part of the burger menu-->
+                    </div>
+                    <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+                    <div class="overlay" id="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                            <li class="borderh"><a href="index.html">Home</a></li>
+                            <li class="borderb"><a href="#selected-work">work</a></li>
+                            <li class="borderb"><a href="about.html">about</a></li>
+                            <li class="borderb"><a href="#contact-ancla">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="/assets/js/script.js"></script>
+    
             </nav>
        
         </header>
@@ -50,15 +69,15 @@
         </div>
 
 
+        <div id="selected-work"></div>
     <div class="container border">
-        <h3 data-aos="fade-right" data-aos-duration="1000">
+        <h3 data-aos="fade-right" data-aos-duration="1000"> 
             selected <br>work
         </h3>
     </div>
 
-    
-        <a href="" class="project border">
-            <img  class="treballs1" src="./assets/img/minteen.jpg" alt="">
+        <a href="./work.html" class="project border">
+            <img  class="treballs1" src="./assets/img/mockterra-2.png" alt="">
             
             <div class="container flex">
                 <div data-aos="fade-right" data-aos-duration="1000" class="frase1">
@@ -70,19 +89,19 @@
             </div>
         </a>
 
-        <a href="" class="project border">
-            <img  class="treballs1" src="./assets/img/minteen.jpg" alt="">
+        <a href="work-3.html" class="project border">
+            <img  class="treballs1" src="./assets/img/mindteen-1.webp" alt="">
 
             <div class="container flex">
-                <div data-aos="fade-right" data-aos-duration="1000" class="frase2">research<br>concept <br>naming <br> copywriting <br> prototype</div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="frase2">Case Study<br>Research <br>Concept<br> copywriting <br> prototype <br> Social Media</div>
                     <div data-aos="fade-left" data-aos-duration="1000" class="desc2">
                         MindTeen<br>Landing Page
                     </div>
             </div>
         </a>
 
-        <a href="" class="project border">
-            <img  class="treballs1" src="./assets/img/minteen.jpg" alt="">
+        <a href="work-2.html" class="project border">
+            <img  class="treballs1" src="./assets/img/mockupcosmic3.webp" alt="">
 
                 <div class="container flex">
                     <div data-aos="fade-right" data-aos-duration="1000" class="frase1">
@@ -97,18 +116,31 @@
             <img  class="treballs1" src="./assets/img/minteen.jpg" alt="">
 
                 <div class="container flex">
-                    <div data-aos="fade-right" data-aos-duration="1000" class="frase2">research<br>concept<br>naming<br>identity<br>design<br>social media</div>
+                    <div data-aos="fade-right" data-aos-duration="1000" class="frase2">benchmark<br>Concept<br>design<br>prototype</div>
                     <div data-aos="fade-left" data-aos-duration="1000" class="desc2">
-                   DISCREPO.<br>Identity
+                   Filmood<br>Movies app
                     </div>
                 </div>
         </a>
 
+        <a href="work-4.html" class="project border">
+            <img  class="treballs1" src="./assets/img/mobile.jpg" alt="">
+
+                <div class="container flex">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="frase1">
+                        Travel Beyond<br>Landing Page
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000" class="desc1">benchmark<br>Concept<br>design<br>prototype
+                    </div>
+                </div>
+        </a>
+
+    
 
 
     <div class="responsiveimg">
 
-        <a class="enlaces_projects_rpv" href="">
+        <a class="enlaces_projects_rpv" href="./work.html">
             <img data-aos="fade-up" data-aos-duration="1000" class="treballs" src="./assets/img/laterra.png" alt="">
                 <div class="responsivetext">
                     <p class="titulrspnv">la tierra del olvido
@@ -117,22 +149,51 @@
                 </div>
         </a>
 
-        <a class="enlaces_projects_rpv" href="">
+        <a class="enlaces_projects_rpv" href="work-3.html">
             <img data-aos="fade-up" data-aos-duration="1000" class="treballs" src="./assets/img/landingmindteen.png" alt="">
                 <div class="responsivetext">
                     <p class="titulrspnv">mindteen landing page
-                        <p id="textminor">Research / Concept / UX Writing / prototype</p>
+                        <p id="textminor">Case Study / Research / Concept / UX Writing / prototype / Social Media</p>
                 </p> 
                 </div>
         </a>
+
+        <a class="enlaces_projects_rpv" href="work-2.html">
+            <img data-aos="fade-up" data-aos-duration="1000" class="treballs" src="./assets/img/mockup2.jpg" alt="">
+                <div class="responsivetext">
+                    <p class="titulrspnv">Cosmic Chaos App
+                        <p id="textminor">Naming / UX/UI / Content / Prototype</p>
+                </p> 
+                </div>
+        </a>
+
+        <a class="enlaces_projects_rpv" href="">
+            <img data-aos="fade-up" data-aos-duration="1000" class="treballs" src="./assets/img/landingmindteen.png" alt="">
+                <div class="responsivetext">
+                    <p class="titulrspnv">Filmood Movies App
+                        <p id="textminor">Benchmark / Concept / Design / Prototype</p>
+                </p> 
+                </div>
+        </a>
+
+        <a class="enlaces_projects_rpv" href="work-4.html">
+            <img data-aos="fade-up" data-aos-duration="1000" class="treballs" src="./assets/img/travel__beyond_mockup_1.png" alt="">
+                <div class="responsivetext">
+                    <p class="titulrspnv">Travel Beyond landing page
+                        <p id="textminor">Benchmark / Concept / Design / Prototype</p>
+                </p> 
+                </div>
+        </a>
+        
        
     </div>
 
 
     <h4 data-aos="fade-right" data-aos-duration="1000">
-        <a href="">WHO IS<br>ME🡥</a>
+        <a href="about.html">WHO IS<br>ME🡥</a>
     </h4>
 
+    <div id="contact-ancla"></div>
     <h5 data-aos="fade-up"
     data-aos-duration="3000">
         Want to cycle with me or do you prefer to be my gym bro?
@@ -148,7 +209,7 @@ Well, we can also work together<br>🡣
                 <a href="https://www.linkedin.com/in/victoria-perea-sanjuan/" target="_blank" rel="noopener noreferrer">linkedin</a>
                 <a href="https://www.instagram.com/vickyabyss/"  target="_blank" rel="noopener noreferrer">instagram</a>
                 <a href="https://www.behance.net/vickyabyss" target="_blank" rel="noopener noreferrer">behance</a>
-                <a href="https://dribbble.com/Vickyabyss"  target="_blank" rel="noopener noreferrer">dribbble</a>
+                <a href="https://dribbble.com/Vickyperea"  target="_blank" rel="noopener noreferrer">dribbble</a>
         </div>
 
         <div class="copy">

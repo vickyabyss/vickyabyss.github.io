@@ -1,0 +1,607 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+button,
+[role="button"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: auto;
+}
+
+iframe {
+    border: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+    width: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased !important;
+    font-smooth: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+a svg,
+button * {
+    pointer-events: none;
+}
+
+
+
+/*-------------------AQUI EMPIEZO-------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*----------------------------HEADER------------------------------*/
+/*----------------------------------------------------------------*/
+
+#overlay {
+    display: none;
+}
+
+header {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  border-bottom: solid 1px #9A9A9A;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+
+
+.logo a nav {
+  text-decoration: none;
+}
+a{
+  color:black;
+  text-decoration:none
+}
+
+.container {
+    padding: 0 1.5rem;
+}
+
+.logo {
+left: 2%;
+margin: 0.5rem;
+margin-left: 1.5rem;
+font-size: 1.5rem;
+text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #E7E7E7;
+ 
+}
+.menu {
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 2rem; 
+}
+.cajasheader a{
+  font-size: 1.5rem;
+  color: black;
+  text-transform: uppercase;
+  margin-left: 6rem;
+  float: right;
+
+}
+.cajasheader a:hover{
+  font-style: italic;
+}
+
+.logo:hover {
+  font-style: italic;
+}
+/*----------------------------------------------------------------*/
+/*-----------------------------BODY-------------------------------*/
+/*----------------------------------------------------------------*/
+
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: 'Switzer-Regular', sans-serif;
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 2rem 8rem 2rem 8rem;
+  }
+
+  .button {
+    position: fixed;
+	bottom: 40px;
+	right: 40px;
+    z-index: 99;
+}
+.button:hover {
+    width: 5%;
+}
+
+
+.trabajos {
+    margin-top: 6rem;
+    text-align: center;
+}
+.title{
+    font-family: 'Switzer-Regular', sans-serif;
+    font-weight: bold;
+    line-height: 90%;
+    font-size: 4.25rem;
+    text-transform: uppercase;
+    color: #0D0D0D;
+}
+.description {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 4rem;
+}
+img{
+    display:block;
+    margin:auto;
+    margin-top: 2rem;
+}
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.gif_ {
+    width: 70%;
+}
+
+h5 {
+    font-size: 6.875rem;
+    line-height: 7rem;
+    text-align: center;
+    padding:5%;
+}
+.mail {
+    font-size: 2.813rem;
+    text-transform: uppercase;
+}
+.mail a:hover {
+    border-bottom: 2px solid black;
+}
+
+.process {
+    border-bottom: 1px solid #9A9A9A;
+    width: 100%;
+}
+
+.descriptions {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.descriptions a:hover {
+        font-style: italic;
+}
+
+/*----------------------------------------------------------------*/
+/*---------------------------FOOTER-------------------------------*/
+/*----------------------------------------------------------------*/
+.mail {
+    font-size: 2.813rem;
+    text-transform: uppercase;
+}
+.rrss{
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.rrss a{
+  display: inline-block;
+  font-size: 2.813rem;
+  text-transform: uppercase;
+  margin: 0 2rem;
+  border-bottom: 2px solid white;
+}
+.rrss a:hover {
+  border-bottom: 2px solid black;
+}
+.copy {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+@media (min-width: 600px) {
+    .project {
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+    .project:hover .treballs1 {
+    opacity: 1;
+    }
+    .treballs1 {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .5s ease-in-out;
+        will-change: opacity;
+        min-width: 100%;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/*---------------------------RESPONSIVE---------------------------*/
+/*----------------------------------------------------------------*/
+
+@media (max-width: 700px) {
+
+    /*---------------------MENU BURGER ANIMADO------------*/
+#overlay {
+        display: block;
+    }
+    
+li a {
+ font-family: 'Switzer-Regular', sans-serif;
+}
+body{
+    margin: 2rem;
+}
+.button_container {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+.button_container:hover {
+  opacity: .4;
+
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background:black;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background:black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+.overlay.open {
+  opacity: 100%;
+  visibility: visible;
+  height: 100%;
+  
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  line-height: 7rem;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  font-family: 'Switzer-Regular', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+.overlay-menu ul li:hover {
+    font-style: italic;
+}
+
+.borderh {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    width: 100%;
+    margin: 0;
+}
+.borderb {
+    border-bottom: solid 1px white;
+    width: 100%;
+    margin: 0;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+/*---------------------FIN MENU BURGER ANIMADO------------*/
+.cajasheader {
+    display: none;
+  }
+.trabajos {
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+  .description {
+      font-size: 1.5rem ;
+      line-height: 2rem;
+  }
+  h5 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.gif_ {
+    width: 90%;
+}
+
+.descriptions {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+/*---------------------footer------------*/
+
+
+.mail a{
+    font-size: 1.5rem;
+}
+
+.rrss {
+    flex-direction: column;
+}
+.rrss a {
+    font-size: 2rem;
+    padding: 1rem;
+}  
+}

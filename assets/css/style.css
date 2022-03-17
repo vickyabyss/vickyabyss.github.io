@@ -187,6 +187,10 @@ button * {
 /*----------------------------HEADER------------------------------*/
 /*----------------------------------------------------------------*/
 
+#overlay {
+    display: none;
+}
+
 header {
   display: flex;
   text-decoration: none;
@@ -200,6 +204,8 @@ header {
   justify-content: space-between;
   z-index: 100;
 }
+
+
 
 .logo a nav {
   text-decoration: none;
@@ -307,11 +313,11 @@ body {
   h2 {
     font-family: 'Switzer-Regular', sans-serif;
     font-weight: lighter;
-    font-size: 3.074670571010249vw;
+    font-size: 3.074vw;
     text-transform: uppercase;
     line-height: 95%;
     color: #0D0D0D;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-right: 20%;
     margin-top: 1rem;
   }
@@ -432,7 +438,10 @@ h3 {
   .rrss{
       align-items: center;
       justify-content: center;
-      display: flex;
+      display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   }
   .rrss a{
     display: inline-block;
@@ -474,8 +483,167 @@ h3 {
 /*---------------------------RESPONSIVE---------------------------*/
 /*----------------------------------------------------------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
+    /*---------------------MENU BURGER ANIMADO------------*/
+#overlay {
+        display: block;
+    }
+    
+li a {
+ font-family: 'Switzer-Regular', sans-serif;
+}
+
+.button_container {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+.button_container:hover {
+  opacity: .4;
+
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background:black;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background:black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+.overlay.open {
+  opacity: 100%;
+  visibility: visible;
+  height: 100%;
+  
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  line-height: 7rem;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  font-family: 'Switzer-Regular', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+.overlay-menu ul li:hover {
+    font-style: italic;
+}
+
+.borderh {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    width: 100%;
+    margin: 0;
+}
+.borderb {
+    border-bottom: solid 1px white;
+    width: 100%;
+    margin: 0;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+/*---------------------FIN MENU BURGER ANIMADO------------*/
 .cajasheader {
   display: none;
 }
@@ -521,6 +689,7 @@ h5 {
 .rrss {
     flex-direction: column;
 }
+
 .rrss a {
     font-size: 2rem;
     padding: 1rem;
@@ -541,6 +710,7 @@ h5 {
 }
 .titulrspnv {
     font-size: 1.5rem;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
@@ -559,7 +729,7 @@ h5 {
 
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
    
     .columna {
         background-color: #E7E7E7;
@@ -608,5 +778,6 @@ h5 {
   .treballs{
       width: 100%;
   }
+ 
  
 }
