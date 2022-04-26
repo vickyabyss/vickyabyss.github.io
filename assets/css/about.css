@@ -411,10 +411,7 @@ h5 {
   text-align: center;
   margin: 1rem;
 }
-#hcta-link a{
-    text-decoration: underline;
-       
-   }
+
 @media (min-width: 600px) {
     .project {
         display: block;
