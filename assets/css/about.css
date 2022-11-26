@@ -44,9 +44,7 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
+
 fieldset,
 form,
 label,
@@ -108,7 +106,7 @@ q {
 
 ol,
 ul {
-    list-style: none;
+    
 }
 
 blockquote::before,
@@ -287,7 +285,35 @@ h1{
 }
 .h3{
     border-bottom: #9A9A9A solid 1px;
-    display: flex;     
+    display: flex; 
+    line-height: 2rem;    
+}
+
+.parr {
+
+    margin-top: 1.2rem;
+
+}
+
+span { font-weight: bolder; }
+
+
+ #description {
+
+    font-size: 1.2rem;
+    color: #414141;
+   
+}
+
+#ogilvy-link {
+    color: red;
+    text-decoration: underline;
+}
+
+a #ogilvy-link:link {
+
+    font-style: italic;
+    font-size: 4rem;
 }
 
 .h3 img{
@@ -309,6 +335,28 @@ h4 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 } 
+
+.myButton {
+	background-color:#ffffff;
+	border-radius:4rem;
+	border:2px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-size:1.5rem;
+    font-weight: 500;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.myButton:hover {
+    color: #ffffff;
+	background-color:#000000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 .cv_text{
     margin-top: 1.5rem;
     font-size: 1.5rem;
@@ -603,11 +651,24 @@ li a {
   }
 }
 /*---------------------FIN MENU BURGER ANIMADO------------*/
+
+
+
+
 .cajasheader {
     display: none;
   }
 /*---------------------BODY------------*/
-  .titulo_{
+  
+
+a .myButton {
+
+    text-align: center;
+    
+}
+
+
+.titulo_{
     margin-top: 4rem;
     font-size: 5rem;
     text-transform: uppercase;
